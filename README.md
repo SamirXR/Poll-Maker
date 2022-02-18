@@ -33,14 +33,14 @@ await db.run(
 
 - Then Move to `.Env`
 
-then E
+then Add a Variable and it'll be helpful for admin to Reset the Poll
+
+```ADMIN_KEY= 4455```
+
+Choose a Key that you Desire/Prefer
 
 
+ <a href="https://discord.gg/P9gGZaXWGR">
+    <img src="https://discordapp.com/api/guilds/913750761924591666/widget.png?style=shield" alt="Discord Server">
+  </a>
 
-
-
-
-
-
-
-*After that Setup Admin secret/Password for Resetting the poll*
