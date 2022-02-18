@@ -9,43 +9,38 @@ A poll built with Chart.js and powered by Node.js with a SQLite database.
 
 FOR ADMIN (POLL MAKER)
 
-- Go to
+- Go to `Index.hbs`
 
+Then edit line `132` As Your desired Poll
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Add a link to `src/pages/index.hbs` after the form, which will send a query parameter to the server script:
 
 ```
-<p>
- <a href="/?results=true">Show results</a>
-</p>
+<div class="poll-form">
+<p>What do you like coding most? </p>
 ```
 
-2. Extend the `server.js` `GET` endpoint `/` to send a flag if the user requested the results:
+
+
+- Then move to `Sqlite.js`
+
+Then edit line `40` As your desired Poll inputs
 
 ```
-// User requested results
-params.results = request.query.results;
+await db.run(
+"INSERT INTO Choices (language, picks) VALUES ('HTML', 0), ('JavaScript', 0), ('CSS', 0)"
+);
 ```
 
-Click the __Show results__ link to see the results without voting!
+- Then Move to `.Env`
 
-_Tip: If you just cleared the log, make sure you vote again so that there are some results to show._ 🙈
+then E
+
+
+
+
+
+
+
+
+
+*After that Setup Admin secret/Password for Resetting the poll*
