@@ -21,9 +21,9 @@ We're using the sqlite wrapper so that we can make async / await connections
 dbWrapper
   .open({
     filename: dbFile,
-    driver: sqlite3.Database
+    driver: sqlite3.Database,
   })
-  .then(async dBase => {
+  .then(async (dBase) => {
     db = dBase;
 
     // We use try and catch blocks throughout to handle any database errors
@@ -58,7 +58,6 @@ dbWrapper
 
 // Our server script will call these methods to connect to the db
 module.exports = {
-  
   /**
    * Get the options in the database
    *
@@ -83,7 +82,7 @@ module.exports = {
    * Find and update the chosen option
    * Return the updated list of votes
    */
-  processVote: async vote => {
+  processVote: async (vote) => {
     // Insert new Log table entry indicating the user choice and timestamp
     try {
       // Check the vote is valid
@@ -95,7 +94,7 @@ module.exports = {
         // Build the user data from the front-end and the current time into the sql query
         await db.run("INSERT INTO Log (choice, time) VALUES (?, ?)", [
           vote,
-          new Date().toISOString()
+          new Date().toISOString(),
         ]);
 
         // Update the number of times the choice has been picked by adding one to it
@@ -146,5 +145,5 @@ module.exports = {
     } catch (dbError) {
       console.error(dbError);
     }
-  }
+  },
 };
