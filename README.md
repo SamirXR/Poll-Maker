@@ -45,12 +45,3 @@ Choose a Key that you Desire/Prefer
   </a>
 
 ___________________________________________________________________________________________________________
-An Example :*)*
-
-<img src="https://cdn.glitch.global/d73c920b-6715-44f1-ae11-271f9d054109/95844557-989b-419f-8224-a5bf4203dbc7.image.png?v=1645265269302" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
-
-
-
-
-Chart.js's Poll output will look like this :*)*
-<img src="https://cdn.glitch.global/d73c920b-6715-44f1-ae11-271f9d054109/3a1e0591-99d2-44e8-a9ae-9235a5ed6328.image.png?v=1645265569960" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
